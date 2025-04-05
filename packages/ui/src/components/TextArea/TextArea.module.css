@@ -1,0 +1,24 @@
+@import "../../styles/mixins/input.css";
+
+.container {
+  @mixin input-container;
+}
+
+.label {
+  @mixin input-label;
+}
+
+.input {
+  @mixin input-field;
+
+  height: initial !important;
+  min-height: rem(100px);
+}
+
+.error {
+  @mixin input-error;
+}
+
+.isRow {
+  @mixin input-row;
+}

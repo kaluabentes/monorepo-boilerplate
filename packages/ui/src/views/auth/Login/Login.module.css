@@ -1,0 +1,36 @@
+@import "@blogtron/ui/styles/media.css";
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: rem(40px);
+}
+
+.input {
+  margin-bottom: rem(12px);
+}
+
+.title,
+.text,
+.button {
+  margin-bottom: rem(28px);
+}
+
+.card {
+  height: 100vh;
+  borde-radius: 0;
+
+  @media (--tablet) {
+    height: initial;
+    borde-radius: initial;
+    max-width: rem(500px);
+    margin: 0 auto;
+  }
+}
+
+.backdrop {
+  @media (--tablet) {
+    padding-top: rem(40px);
+  }
+}

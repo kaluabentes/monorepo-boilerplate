@@ -1,0 +1,32 @@
+@import "@blogtron/ui/styles/media.css";
+
+.header {
+  margin-bottom: rem(22px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(12px);
+
+  @media (--desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & button {
+      display: inline-flex;
+      width: initial;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  gap: rem(14px);
+
+  @media (--tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (--desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

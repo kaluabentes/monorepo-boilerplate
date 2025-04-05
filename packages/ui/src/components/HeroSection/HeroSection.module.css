@@ -1,0 +1,62 @@
+@import "@blogtron/ui/styles/media.css";
+
+@custom-media --desktop (min-width: 1025px);
+
+.hero {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: rem(32px) rem(22px);
+
+  @media (--desktop) {
+    padding: rem(100px) 0 rem(66px) 0;
+  }
+}
+
+.headline {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: rem(32px);
+  max-width: rem(872px);
+  line-height: 1.2;
+
+  @media (--desktop) {
+    font-size: rem(66px);
+    margin-bottom: rem(40px);
+  }
+}
+
+.subheadline {
+  font-size: rem(16px);
+  text-align: center;
+  max-width: rem(872px);
+  margin-bottom: rem(40px);
+
+  @media (--desktop) {
+    font-size: rem(20px);
+    margin-bottom: rem(50px);
+  }
+}
+
+.cta {
+  width: 100%;
+  margin-bottom: rem(40px);
+
+  @media (--tablet) {
+    width: initial;
+    margin-bottom: rem(58px);
+  }
+}
+
+.screenshot {
+  width: 100%;
+}
+
+.screenshotContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}

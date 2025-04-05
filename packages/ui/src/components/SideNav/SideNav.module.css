@@ -1,0 +1,13 @@
+.nav {
+  transition: width 200ms ease-in-out;
+  width: rem(68px);
+  overflow: hidden;
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+.expanded {
+  width: rem(280px);
+}

@@ -1,0 +1,39 @@
+.header {
+  padding: rem(22px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.menuButton {
+  background: white;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    font-size: rem(40px);
+  }
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: rem(12px);
+}

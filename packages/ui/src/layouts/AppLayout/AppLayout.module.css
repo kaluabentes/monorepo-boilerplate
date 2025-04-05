@@ -1,0 +1,44 @@
+:root {
+  --main-height: calc(100vh - 73.6px);
+}
+
+.sideNavContainer {
+  border-right: 1px solid #e5e7eb;
+  box-shadow:
+    0 0 transparent,
+    0 0 transparent,
+    1px -0.5px 2px 0 rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  position: relative;
+  z-index: 9;
+  height: var(--main-height);
+  background: white;
+}
+
+.sideNavContainerMobile {
+  position: absolute;
+  height: var(--main-height);
+  transform: translateX(-100%);
+  transition: 200ms ease-in-out;
+}
+
+.sideNavContainerMobileOpen {
+  transform: translateX(0);
+}
+
+.desktopRow {
+  display: flex;
+}
+
+.main {
+  background: var(--color-background);
+  width: 100%;
+  padding: rem(22px);
+  overflow-y: auto;
+  height: var(--main-height);
+}
+
+.mainContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+}

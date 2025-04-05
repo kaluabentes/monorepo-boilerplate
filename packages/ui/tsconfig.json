@@ -1,8 +1,9 @@
 {
   "extends": "@blogtron/typescript-config/react-library.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "rootDir": "./src"
   },
-  "include": ["src"],
+  "include": ["src", "global.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

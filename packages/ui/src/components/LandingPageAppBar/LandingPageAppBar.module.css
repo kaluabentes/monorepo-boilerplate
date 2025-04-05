@@ -1,0 +1,48 @@
+.header {
+  padding: rem(22px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuButton {
+  background: white;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    font-size: rem(40px);
+  }
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+}
+
+.navOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buttons {
+  padding: rem(22px);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: rem(12px);
+}

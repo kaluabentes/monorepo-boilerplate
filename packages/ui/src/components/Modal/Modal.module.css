@@ -1,0 +1,63 @@
+.overlay {
+  background-color: var(--color-overlay);
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
+
+  .content {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.content {
+  z-index: 100;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow:
+    hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 500px;
+  max-height: 85vh;
+  padding: rem(24px);
+  opacity: 0;
+  transform: translate(-50%, -20%);
+  transition: 0.2s;
+  overflow-y: auto;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  cursor: default;
+  right: 14px;
+  top: 14px;
+  font-size: 32px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-text);
+  }
+}

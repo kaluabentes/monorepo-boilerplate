@@ -1,0 +1,21 @@
+.trigger {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+
+  & svg {
+    font-size: rem(12px);
+  }
+}
+
+.content {
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}

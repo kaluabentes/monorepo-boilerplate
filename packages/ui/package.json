@@ -3,7 +3,36 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./*": "./src/*.tsx"
+    "./layouts/AppLayout": "./src/layouts/AppLayout/AppLayout.tsx",
+    "./AppLayoutContext": "./src/layouts/AppLayout/AppLayoutContext.tsx",
+    "./components/Backdrop": "./src/components/Backdrop/Backdrop.tsx",
+    "./components/Button": "./src/components/Button/Button.tsx",
+    "./components/Card": "./src/components/Card/Card.tsx",
+    "./config/messages": "./src/config/messages.ts",
+    "./components/SiteCard": "./src/components/SiteCard/SiteCard.tsx",
+    "./components/EmptyState": "./src/components/EmptyState/EmptyState.tsx",
+    "./components/Heading": "./src/components/Heading/Heading.tsx",
+    "./components/HeaderButton": "./src/components/HeaderButton/HeaderButton.tsx",
+    "./components/HeroSection": "./src/components/HeroSection/HeroSection.tsx",
+    "./components/Input": "./src/components/Input/Input.tsx",
+    "./components/LandingPageAppBar": "./src/components/LandingPageAppBar/LandingPageAppBar.tsx",
+    "./components/LandingPageHeader": "./src/components/LandingPageHeader/LandingPageHeader.tsx",
+    "./components/Logo": "./src/components/Logo/Logo.tsx",
+    "./styles/main.css": "./src/styles/main.css",
+    "./components/MarketplaceBrandsSection": "./src/components/MarketplaceBrandsSection/MarketplaceBrandsSection.tsx",
+    "./components/Modal": "./src/components/Modal/Modal.tsx",
+    "./styles/media.css": "./src/styles/media.css",
+    "./components/MenuItem": "./src/components/MenuItem/MenuItem.tsx",
+    "./components/Paragraph": "./src/components/Paragraph/Paragraph.tsx",
+    "./components/PageHeader": "./src/components/PageHeader/PageHeader.tsx",
+    "./components/Spinner": "./src/components/Spinner/Spinner.tsx",
+    "./Skeleton": "./src/components/Skeleton/Skeleton.tsx",
+    "./components/Select": "./src/components/Select/Select.tsx",
+    "./components/Table": "./src/components/Table/Table.tsx",
+    "./components/TextArea": "./src/components/TextArea/TextArea.tsx",
+    "./hooks/useBreakpoint": "./src/hooks/useBreakpoint.ts",
+    "./views/landingpage/Home": "./src/views/landingpage/Home/Home.tsx",
+    "./views/app/PageTheme": "./src/views/app/PageTheme/PageTheme.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -21,7 +50,16 @@
     "typescript": "5.8.2"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.0.1",
+    "@radix-ui/react-dropdown-menu": "^2.1.6",
+    "@radix-ui/react-portal": "^1.1.4",
+    "clsx": "^2.1.1",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.55.0",
+    "react-icons": "^5.5.0",
+    "slugify": "^1.6.6",
+    "use-breakpoint": "^4.0.6",
+    "yup": "^1.6.1"
   }
 }

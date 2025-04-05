@@ -1,0 +1,31 @@
+@import "@blogtron/ui/styles/media.css";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(16px);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: rem(22px);
+
+  @media (--tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(32px);
+  }
+
+  @media (--desktop) {
+    grid-template-columns: repeat(6, 1fr);
+    gap: rem(32px);
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand svg {
+  max-height: rem(50px);
+  fill: var(--color-text-muted);
+}

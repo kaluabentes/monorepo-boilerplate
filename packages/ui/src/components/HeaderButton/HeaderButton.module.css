@@ -1,0 +1,19 @@
+.menuButton {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-size: rem(28px);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  margin-right: rem(22px);
+
+  &:hover {
+    color: var(--color-text);
+  }
+}
+
+.isActive {
+  color: var(--color-text);
+}
