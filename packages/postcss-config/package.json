@@ -1,5 +1,5 @@
 {
-  "name": "@repo/postcss-config",
+  "name": "@blogtron/postcss-config",
   "version": "1.0.0",
   "description": "",
   "main": "postcss.config.js",
