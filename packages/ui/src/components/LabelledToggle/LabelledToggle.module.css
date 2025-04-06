@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  border: 0;
+  padding: rem(4px);
+  border-radius: 6px;
+  background: var(--color-background);
+  gap: rem(8px);
+}
+
+.label {
+  padding: rem(4px) rem(14px);
+  font-size: rem(12px);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  border-radius: 6px;
+  background: transparent;
+  border: 0;
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+.active {
+  background: var(--color-foreground);
+  color: var(--color-text);
+}

@@ -3,11 +3,7 @@
 }
 
 .sideNavContainer {
-  border-right: 1px solid var(--color-foreground-border);
-  box-shadow:
-    0 0 transparent,
-    0 0 transparent,
-    1px -0.5px 2px 0 rgba(0, 0, 0, 0.05);
+  border-right: 1px solid var(--color-border);
   display: inline-block;
   position: relative;
   z-index: 9;

@@ -1,0 +1,30 @@
+@import "../../styles/mixins/input.css";
+
+.container {
+  @mixin input-container;
+  width: 100%;
+}
+
+.label {
+  @mixin input-label;
+}
+
+.input {
+  @mixin input-field;
+}
+
+.error {
+  @mixin input-error;
+}
+
+.isRow {
+  @mixin input-row;
+
+  & div:nth-child(2) {
+    width: initial;
+  }
+
+  & .label {
+    margin-bottom: 0;
+  }
+}
