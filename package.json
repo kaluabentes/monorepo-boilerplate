@@ -10,7 +10,21 @@
     "prepare": "husky"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9.23.0",
+    "@next/eslint-plugin-next": "^15.2.1",
+    "@turbo/gen": "^2.4.4",
     "@types/lodash": "^4.17.16",
+    "eslint": "^9.24.0",
+    "eslint-config-next": "15.2.4",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-turbo": "^2.4.4",
+    "globals": "^16.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
     "postcss": "^8.5.3",
@@ -22,7 +36,8 @@
     "postcss-preset-env": "^10.1.5",
     "prettier": "^3.5.3",
     "turbo": "^2.5.0",
-    "typescript": "5.8.2"
+    "typescript": "5.8.2",
+    "typescript-eslint": "^8.29.0"
   },
   "packageManager": "pnpm@9.0.0",
   "engines": {
@@ -36,6 +51,10 @@
     ]
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "next": "15.2.4",
+    "next-themes": "^0.4.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
