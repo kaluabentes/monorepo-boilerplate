@@ -1,11 +1,11 @@
 "use client"
 
-import Button from "@blogtron/ui/components/Button"
-import HeroSection from "@blogtron/ui/components/HeroSection"
-import LandingPageAppBar from "@blogtron/ui/components/LandingPageAppBar"
-import LandingPageHeader from "@blogtron/ui/components/LandingPageHeader"
-import MarketplaceBrandsSection from "@blogtron/ui/components/MarketplaceBrandsSection"
-import MenuItem from "@blogtron/ui/components/MenuItem"
+import Button from "@blogtron/ui/components/Button/Button"
+import HeroSection from "@blogtron/ui/components/HeroSection/HeroSection"
+import LandingPageAppBar from "@blogtron/ui/components/LandingPageAppBar/LandingPageAppBar"
+import LandingPageHeader from "@blogtron/ui/components/LandingPageHeader/LandingPageHeader"
+import MarketplaceBrandsSection from "@blogtron/ui/components/MarketplaceBrandsSection/MarketplaceBrandsSection"
+import MenuItem from "@blogtron/ui/components/MenuItem/MenuItem"
 import useBreakpoint from "@blogtron/ui/hooks/useBreakpoint"
 
 export interface HomeProps {

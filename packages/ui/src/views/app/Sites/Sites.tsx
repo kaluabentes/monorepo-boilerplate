@@ -1,7 +1,7 @@
-import EmptyState from "@blogtron/ui/components/EmptyState"
-import PageHeader from "@blogtron/ui/components/PageHeader"
-import SiteCard, { Site } from "@blogtron/ui/components/SiteCard"
-import AppLayout from "@blogtron/ui/layouts/AppLayout"
+import EmptyState from "@blogtron/ui/components/EmptyState/EmptyState"
+import PageHeader from "@blogtron/ui/components/PageHeader/PageHeader"
+import SiteCard, { Site } from "@blogtron/ui/components/SiteCard/SiteCard"
+import AppLayout from "@blogtron/ui/layouts/AppLayout/AppLayout"
 import { ElementType } from "react"
 
 import CreateSiteModal, { CreateSitePayload } from "./CreateSiteModal"
@@ -22,16 +22,10 @@ export default function Sites({
   onCreate,
   isCreateOpen = false,
   isCreateLoading = false,
-  LinkComponent,
 }: SitesProps) {
   return (
     <AppLayout hideSideNav>
-      <PageHeader
-        title="Sites"
-        buttonText="Criar"
-        buttonHref="#"
-        LinkComponent={LinkComponent}
-      />
+      <PageHeader title="Sites" buttonText="Criar" buttonHref="#" />
       {!sites.length && (
         <EmptyState
           title="Não há nada aqui ainda"

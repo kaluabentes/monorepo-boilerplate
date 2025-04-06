@@ -1,4 +1,4 @@
-@import "@blogtron/ui/styles/media.css";
+@import "../../styles/media.css";
 
 .header {
   margin-bottom: rem(22px);

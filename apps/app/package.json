@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@blogtron/ui": "workspace:*",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "next": "15.2.4"
@@ -17,6 +18,7 @@
     "@blogtron/eslint-config": "workspace:*",
     "@blogtron/postcss-config": "workspace:*",
     "@blogtron/typescript-config": "workspace:*",
+    "@blogtron/ui": "workspace:*",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",

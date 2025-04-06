@@ -1,8 +1,8 @@
-import Backdrop from "@blogtron/ui/components/Backdrop"
-import Card from "@blogtron/ui/components/Card"
-import Heading from "@blogtron/ui/components/Heading"
-import Logo from "@blogtron/ui/components/Logo"
-import Paragraph from "@blogtron/ui/components/Paragraph"
+import Backdrop from "@blogtron/ui/components/Backdrop/Backdrop"
+import Card from "@blogtron/ui/components/Card/Card"
+import Heading from "@blogtron/ui/components/Heading/Heading"
+import Logo from "@blogtron/ui/components/Logo/Logo"
+import Paragraph from "@blogtron/ui/components/Paragraph/Paragraph"
 import useBreakpoint from "@blogtron/ui/hooks/useBreakpoint"
 import { MdOutlineMarkEmailRead } from "react-icons/md"
 

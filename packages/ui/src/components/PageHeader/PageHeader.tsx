@@ -1,4 +1,4 @@
-import { ElementType } from "react"
+import Link from "next/link"
 
 import Button from "../Button/Button"
 import Heading from "../Heading/Heading"
@@ -7,9 +7,8 @@ import styles from "./PageHeader.module.css"
 
 export interface PageHeaderProps {
   title: string
-  buttonText: string
-  buttonHref: string
-  LinkComponent?: ElementType
+  buttonText?: string
+  buttonHref?: string
   onButtonClick?: () => void
 }
 
@@ -17,7 +16,6 @@ export default function PageHeader({
   title,
   buttonText,
   buttonHref,
-  LinkComponent = "a",
   onButtonClick,
 }: PageHeaderProps) {
   return (
@@ -26,10 +24,10 @@ export default function PageHeader({
         {title}
       </Heading>
       {onButtonClick && <Button onClick={onButtonClick}>{buttonText}</Button>}
-      {!onButtonClick && (
-        <LinkComponent href={buttonHref}>
+      {!onButtonClick && buttonHref && (
+        <Link href={buttonHref}>
           <Button>{buttonText}</Button>
-        </LinkComponent>
+        </Link>
       )}
     </header>
   )

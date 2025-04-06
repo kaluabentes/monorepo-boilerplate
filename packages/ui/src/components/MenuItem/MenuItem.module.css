@@ -1,4 +1,4 @@
-@import "@blogtron/ui/styles/media.css";
+@import "../../styles/media.css";
 
 .menuItem {
   font-family: var(--font-family);

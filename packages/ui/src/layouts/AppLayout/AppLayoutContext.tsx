@@ -1,21 +1,21 @@
+"use client"
+
 import {
   createContext,
   Dispatch,
-  ElementType,
   ReactNode,
   SetStateAction,
   useContext,
   useState,
 } from "react"
 
-interface User {
+export interface User {
   name: string
   email: string
 }
 
 interface AppLayoutContextData {
   user: User
-  LinkComponent: ElementType | string
 }
 
 const DEFAULT_VALUE = {
@@ -23,7 +23,6 @@ const DEFAULT_VALUE = {
     name: "",
     email: "",
   },
-  LinkComponent: "a",
 }
 
 const AppLayoutContext = createContext<AppLayoutContextData>(DEFAULT_VALUE)

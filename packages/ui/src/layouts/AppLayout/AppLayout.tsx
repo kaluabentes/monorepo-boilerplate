@@ -1,3 +1,5 @@
+"use client"
+
 import clsx from "clsx"
 import { ReactNode, useState } from "react"
 import { BiX } from "react-icons/bi"
