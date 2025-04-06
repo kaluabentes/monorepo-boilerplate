@@ -26,5 +26,5 @@
   --color-text-muted: rgb(155, 155, 155);
   --color-background: #191919;
   --color-foreground: #202020;
-  --color-border: rgba(255, 255, 255, 0.075);
+  --color-border: rgba(255, 255, 255, 0.05);
 }
