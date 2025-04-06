@@ -23,7 +23,7 @@
 }
 
 .divider {
-  background-color: rgba(17, 17, 17, 0.1);
+  background-color: var(--color-foreground-border);
   height: 0.8px;
   width: 100%;
   margin-block: 0.5rem;

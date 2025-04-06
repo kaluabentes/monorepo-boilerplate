@@ -7,3 +7,7 @@
     height: rem(32px);
   }
 }
+
+.skeleton {
+  max-width: 150px;
+}

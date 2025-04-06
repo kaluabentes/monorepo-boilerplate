@@ -7,7 +7,7 @@
   padding: rem(16px) rem(22px);
   width: 100%;
   text-align: left;
-  background: white;
+  background: transparent;
   border: 0;
   margin-bottom: rem(2px);
   color: var(--color-text-muted);

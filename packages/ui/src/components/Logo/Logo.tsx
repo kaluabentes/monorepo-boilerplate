@@ -2,6 +2,9 @@ import appConfig from "@blogtron/config/app.config"
 import clsx from "clsx"
 import Image from "next/image"
 import { useTheme } from "next-themes"
+import { useEffect, useState } from "react"
+
+import Skeleton from "../Skeleton/Skeleton"
 
 import darkLogo from "./logo-dark.svg"
 import lightLogo from "./logo-light.svg"
@@ -12,16 +15,24 @@ export interface LogoProps {
 }
 
 export default function Logo({ className }: LogoProps) {
-  const { theme } = useTheme()
+  const [isMounted, setIsMounted] = useState(false)
+  const { resolvedTheme: theme } = useTheme()
 
-  const image: { [key: string]: string } = {
-    light: lightLogo,
-    dark: darkLogo,
-  }
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   return (
     <div className={clsx(styles.logoContainer, className)}>
-      <Image src={image[theme!]!} alt={appConfig.name} height={30} />
+      {!isMounted && <Skeleton className={styles.skeleton} />}
+      {isMounted && (
+        <Image
+          src={theme === "dark" ? darkLogo : lightLogo}
+          alt={appConfig.name}
+          height={30}
+          width={0}
+        />
+      )}
     </div>
   )
 }
