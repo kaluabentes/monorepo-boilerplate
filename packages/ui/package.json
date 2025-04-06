@@ -9,12 +9,10 @@
   },
   "devDependencies": {
     "@blogtron/eslint-config": "workspace:*",
-    "@blogtron/typescript-config": "workspace:*",
-    "@types/node": "^22.13.10",
-    "@types/react": "19.0.12",
-    "@types/react-dom": "19.0.4"
+    "@blogtron/typescript-config": "workspace:*"
   },
   "dependencies": {
+    "@blogtron/config": "workspace:*",
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-dropdown-menu": "^2.1.6",
     "@radix-ui/react-portal": "^1.1.4",

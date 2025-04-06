@@ -15,9 +15,6 @@
     "@blogtron/eslint-config": "workspace:*",
     "@blogtron/postcss-config": "workspace:*",
     "@blogtron/typescript-config": "workspace:*",
-    "@blogtron/ui": "workspace:*",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19"
+    "@blogtron/ui": "workspace:*"
   }
 }
