@@ -8,7 +8,8 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@blogtron/ui/*": ["../../packages/ui/src/*"]
+      "@blogtron/ui/*": ["../../packages/ui/src/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": [

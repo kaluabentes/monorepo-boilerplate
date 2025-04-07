@@ -7,7 +7,6 @@ import { BiX } from "react-icons/bi"
 import Header from "../../components/Header/Header"
 import SideNav from "../../components/SideNav/SideNav"
 import profileItems from "../../config/profileItems"
-import sideNavItems from "../../config/sideNavItems"
 import useBreakpoint from "../../hooks/useBreakpoint"
 
 import styles from "./AppLayout.module.css"
@@ -71,7 +70,7 @@ export default function AppLayout({ children, hideSideNav }: AppLayoutProps) {
           >
             <SideNav
               minimize={minimize && !matchMobileBreakpoint}
-              items={sideNavItems}
+              items={appLayoutContext.sideNavItems}
             />
           </div>
         )}

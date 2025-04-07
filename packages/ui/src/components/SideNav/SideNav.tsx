@@ -1,4 +1,8 @@
+"use client"
+
 import clsx from "clsx"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import React, { ReactNode } from "react"
 
 import MenuItem from "../MenuItem/MenuItem"
@@ -14,20 +18,19 @@ export interface SideNavItem {
 export interface SideNavProps {
   items: SideNavItem[]
   minimize?: boolean
-  LinkComponent?: React.ElementType
 }
 
-export default function SideNav({
-  items,
-  LinkComponent = "a",
-  minimize = false,
-}: SideNavProps) {
+export default function SideNav({ items, minimize = false }: SideNavProps) {
+  const pathname = usePathname()
+
   return (
     <nav className={clsx(styles.nav, !minimize && styles.expanded)}>
       {items.map((item, index) => (
-        <LinkComponent href={item.href} key={index}>
-          <MenuItem icon={item.icon}>{item.text}</MenuItem>
-        </LinkComponent>
+        <Link href={item.href} key={index}>
+          <MenuItem icon={item.icon} isActive={pathname === item.href}>
+            {item.text}
+          </MenuItem>
+        </Link>
       ))}
     </nav>
   )

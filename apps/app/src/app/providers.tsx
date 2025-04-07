@@ -3,13 +3,18 @@ import { AppLayoutProvider } from "@blogtron/ui/layouts/AppLayout/AppLayoutConte
 import { ThemeProvider } from "next-themes"
 import { ReactNode } from "react"
 
+import sideNavItems from "@/config/sideNavItems"
+
 export default function Providers({ children }: { children: ReactNode }) {
   return (
     <ThemeProvider>
       <AppLayoutProvider>
         <AppLayoutBootstrap
-          name="Kaluã Bentes"
-          email="kaluanbentes@gmail.com"
+          user={{
+            name: "Kaluã Bentes",
+            email: "kaluanbentes@gmail.com",
+          }}
+          sideNavItems={sideNavItems}
         />
         {children}
       </AppLayoutProvider>

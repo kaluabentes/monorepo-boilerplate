@@ -4,7 +4,7 @@
   font-family: var(--font-family);
   font-size: 1rem;
   font-weight: 500;
-  padding: rem(16px) rem(22px);
+  padding: rem(12px) rem(22px);
   width: 100%;
   text-align: left;
   background: transparent;
@@ -44,4 +44,8 @@
   width: initial;
   display: inline-flex;
   padding: rem(10px) rem(12px);
+}
+
+.active {
+  color: var(--color-text);
 }

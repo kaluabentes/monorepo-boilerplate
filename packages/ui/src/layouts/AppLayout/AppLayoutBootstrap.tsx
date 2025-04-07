@@ -2,20 +2,21 @@
 
 import { useEffect } from "react"
 
-import { useAppLayoutContext, User } from "./AppLayoutContext"
+import { AppLayoutContextData, useAppLayoutContext } from "./AppLayoutContext"
 
-export default function AppLayoutBootstrap({ name, email }: User) {
+export default function AppLayoutBootstrap({
+  user,
+  sideNavItems,
+}: AppLayoutContextData) {
   const { setAppLayoutContext } = useAppLayoutContext()
 
   useEffect(() => {
     setAppLayoutContext((prev) => ({
       ...prev,
-      user: {
-        name,
-        email,
-      },
+      user,
+      sideNavItems,
     }))
-  }, [setAppLayoutContext, name, email])
+  }, [setAppLayoutContext, user, sideNavItems])
 
   return null
 }

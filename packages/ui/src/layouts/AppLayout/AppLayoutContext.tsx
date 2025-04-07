@@ -1,5 +1,6 @@
 "use client"
 
+import { SideNavItem } from "@blogtron/ui/components/SideNav/SideNav"
 import {
   createContext,
   Dispatch,
@@ -14,8 +15,9 @@ export interface User {
   email: string
 }
 
-interface AppLayoutContextData {
+export interface AppLayoutContextData {
   user: User
+  sideNavItems: SideNavItem[]
 }
 
 const DEFAULT_VALUE = {
@@ -23,6 +25,7 @@ const DEFAULT_VALUE = {
     name: "",
     email: "",
   },
+  sideNavItems: [],
 }
 
 const AppLayoutContext = createContext<AppLayoutContextData>(DEFAULT_VALUE)
