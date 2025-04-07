@@ -11,3 +11,7 @@
 .dropdownContent {
   width: rem(306px);
 }
+
+.logoContainer {
+  width: 100%;
+}

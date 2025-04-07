@@ -1,6 +1,5 @@
 .logoContainer {
-  flex: 1;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   & svg {
@@ -9,5 +8,5 @@
 }
 
 .skeleton {
-  max-width: 150px;
+  width: rem(175px);
 }

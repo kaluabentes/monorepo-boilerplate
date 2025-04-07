@@ -1,3 +1,5 @@
+"use client"
+
 import appConfig from "@blogtron/config/app.config"
 import clsx from "clsx"
 import Image from "next/image"

@@ -40,7 +40,9 @@ export default function Header({
           onClick={onMenuClick}
         />
       )}
-      <Logo />
+      <div className={styles.logoContainer}>
+        <Logo />
+      </div>
       <Dropdown
         trigger={<Avatar small name={user.name} />}
         triggerClassName={styles.button}

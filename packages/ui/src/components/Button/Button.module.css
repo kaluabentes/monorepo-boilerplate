@@ -72,8 +72,16 @@
   }
 }
 
+:global([data-theme="dark"]) {
+  .primary {
+    &:hover {
+      background: color-mix(in srgb, var(--color-primary) 80%, black);
+    }
+  }
+}
+
 .secondary {
-  background: white;
+  background: transparent;
   color: var(--color-text);
   box-shadow: 0px 0px 1px 1px var(--color-border);
 
