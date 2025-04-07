@@ -1,3 +1,5 @@
+"use client"
+
 import Backdrop from "@blogtron/ui/components/Backdrop/Backdrop"
 import Card from "@blogtron/ui/components/Card/Card"
 import Heading from "@blogtron/ui/components/Heading/Heading"
