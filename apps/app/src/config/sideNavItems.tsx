@@ -1,4 +1,4 @@
-import { BiGrid, BiHome, BiUser } from "react-icons/bi"
+import { BiFile, BiHome } from "react-icons/bi"
 
 const sideNavItems = [
   {
@@ -7,14 +7,9 @@ const sideNavItems = [
     icon: <BiHome />,
   },
   {
-    text: "Catálogo",
-    href: "/catalog",
-    icon: <BiGrid />,
-  },
-  {
-    text: "Quem Somos",
-    href: "/about",
-    icon: <BiUser />,
+    text: "Posts",
+    href: "/posts",
+    icon: <BiFile />,
   },
 ]
 

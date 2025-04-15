@@ -17,6 +17,10 @@
   margin-bottom: rem(28px);
 }
 
+.buttonHidePolicies {
+  margin-bottom: 0;
+}
+
 .card {
   height: 100vh;
   borde-radius: 0;

@@ -2,6 +2,7 @@
   transition: width 200ms ease-in-out;
   width: rem(68px);
   overflow: hidden;
+  padding-top: 1rem;
 
   & a {
     text-decoration: none;
@@ -9,5 +10,5 @@
 }
 
 .expanded {
-  width: rem(280px);
+  width: rem(260px);
 }

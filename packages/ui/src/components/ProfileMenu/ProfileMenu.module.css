@@ -43,6 +43,8 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-size: rem(14px);
+  font-weight: 500;
 
   &:hover {
     color: var(--color-text);

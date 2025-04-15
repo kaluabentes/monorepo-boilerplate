@@ -1,0 +1,22 @@
+:root {
+  --color-title-input-placeholder: #9ca3af;
+}
+
+:global([data-theme="dark"]) {
+  --color-title-input-placeholder: rgb(55 55 55);
+}
+
+.input {
+  font-size: 2.488rem;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &[contenteditable][data-empty="true"]:empty::before {
+    content: attr(data-placeholder);
+    color: var(--color-title-input-placeholder);
+    pointer-events: none;
+    display: block;
+  }
+}

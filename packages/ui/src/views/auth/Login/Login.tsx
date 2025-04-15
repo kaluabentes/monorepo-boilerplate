@@ -13,6 +13,7 @@ import {
 } from "@blogtron/ui/config/messages"
 import useBreakpoint from "@blogtron/ui/hooks/useBreakpoint"
 import { yupResolver } from "@hookform/resolvers/yup"
+import clsx from "clsx"
 import Link from "next/link"
 import { useForm } from "react-hook-form"
 import * as yup from "yup"
@@ -81,7 +82,13 @@ export default function Login({
             error={errors?.email?.message}
             {...register("email")}
           />
-          <Button type="submit" className={styles.button}>
+          <Button
+            type="submit"
+            className={clsx(
+              styles.button,
+              hidePolicies && styles.buttonHidePolicies,
+            )}
+          >
             Continuar
           </Button>
           {!hidePolicies && (

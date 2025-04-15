@@ -1,4 +1,4 @@
-import { ElementType, ReactNode } from "react"
+import { ReactNode } from "react"
 import { BiMenu } from "react-icons/bi"
 
 import Avatar from "../Avatar/Avatar"
@@ -19,7 +19,6 @@ export interface HeaderProps {
   onMenuClick?: () => void
   menuIcon?: ReactNode
   menuIconLabel?: string
-  LinkComponent?: ElementType
 }
 
 export default function Header({
@@ -29,7 +28,6 @@ export default function Header({
   onMenuClick = () => null,
   menuIcon = <BiMenu />,
   menuIconLabel = "Botão de menu",
-  LinkComponent = "a",
 }: HeaderProps) {
   return (
     <header className={styles.header}>
@@ -49,12 +47,7 @@ export default function Header({
         contentClassName={styles.dropdownContent}
         align="end"
       >
-        <ProfileMenu
-          name={user.name}
-          email={user.email}
-          items={profileItems}
-          LinkComponent={LinkComponent}
-        />
+        <ProfileMenu name={user.name} email={user.email} items={profileItems} />
       </Dropdown>
     </header>
   )

@@ -1,5 +1,5 @@
+import Link from "next/link"
 import { useTheme } from "next-themes"
-import { ElementType } from "react"
 
 import Avatar from "../Avatar/Avatar"
 import Card from "../Card/Card"
@@ -16,14 +16,12 @@ export interface ProfileMenuProps {
   name: string
   email: string
   items?: ProfileMenuItem[]
-  LinkComponent?: ElementType
 }
 
 export default function ProfileMenu({
   name,
   email,
   items = [],
-  LinkComponent = "a",
 }: ProfileMenuProps) {
   const { resolvedTheme: theme, setTheme } = useTheme()
 
@@ -46,9 +44,9 @@ export default function ProfileMenu({
       />
       <div className={styles.divider} />
       {items.map((item, index) => (
-        <LinkComponent className={styles.item} key={index}>
+        <Link href={item.href} className={styles.item} key={index}>
           {item.text}
-        </LinkComponent>
+        </Link>
       ))}
     </Card>
   )
